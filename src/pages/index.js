@@ -41,6 +41,7 @@ const IndexPage = () => {
             <SEO
                 title={config.head.title}
                 description={config.head.description}
+                image={require(`../images/card.jpg`)}
             />
             <Container style={{backgroundColor: '#2ecc7112'}}>
                 <Banner windowWidth={windowWidth}/>

@@ -28,7 +28,7 @@ class BlogIndex extends React.Component {
             <BlogLayout>
                 <SEO
                     title={'Blog'}
-                    image={'https://firebasestorage.googleapis.com/v0/b/squarespace-chat.appspot.com/o/images%2Fseopipes.jpg?alt=media&token=bd419eee-7923-4cb8-aebc-f2bbb150e078'}
+                    image={require(`../images/card.jpg`)}
                 />
                 {posts.map(({node}) => {
                     const title = node.frontmatter.title || node.fields.slug;
