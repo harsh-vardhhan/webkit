@@ -26,10 +26,7 @@ class BlogIndex extends React.Component {
         const nextPage = (currentPage + 1).toString();
 
         return (
-            <BlogLayout
-                location={this.state.location}
-                title={siteTitle}
-            >
+            <BlogLayout>
                 <SEO
                     title={'Blog'}
                     image={'https://firebasestorage.googleapis.com/v0/b/squarespace-chat.appspot.com/o/images%2Fseopipes.jpg?alt=media&token=bd419eee-7923-4cb8-aebc-f2bbb150e078'}

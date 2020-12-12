@@ -1,61 +1,12 @@
 import React from 'react';
-import {Link} from 'gatsby';
 import Header from './Header';
 
-import {rhythm, scale} from '../utils/typography';
+import {rhythm} from '../utils/typography';
 
 class BlogLayout extends React.Component {
     render() {
-        const {location, title, children} = this.props;
-        const isRootPath = location.pathname === `${__PATH_PREFIX__}/`;
-        const pageNumber = location.pathname.
-            split('/').
-            filter(Boolean).
-            pop();
-        const isPaginatedPath = pageNumber && Boolean(pageNumber.match(/^[0-9]+$/));
-        let header;
+        const {children} = this.props;
 
-        if (isRootPath || isPaginatedPath) {
-            header = (
-                <h1
-                    style={{
-                        ...scale(1.5),
-                        marginBottom: rhythm(1.5),
-                        marginTop: 0
-                    }}
-                >
-                    <Link
-                        style={{
-                            boxShadow: 'none',
-                            textDecoration: 'none',
-                            color: 'inherit'
-                        }}
-                        to={'/'}
-                    >
-                        {title}
-                    </Link>
-                </h1>
-            );
-        } else {
-            header = (
-                <h1
-                    style={{
-                        marginTop: 0
-                    }}
-                >
-                    <Link
-                        style={{
-                            boxShadow: 'none',
-                            textDecoration: 'none',
-                            color: 'inherit'
-                        }}
-                        to={'/'}
-                    >
-                        {title}
-                    </Link>
-                </h1>
-            );
-        }
         return (
             <>
                 <Header/>

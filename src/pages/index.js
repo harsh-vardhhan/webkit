@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
-import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import PageLayout from '../components/PageLayout';
@@ -26,12 +25,6 @@ const Container = styled(FlexCol)`
   justify-content: space-between;
 `;
 
-const highlight = {
-    background: '#b4f2e1',
-    color: '#000000',
-    textDecoration: 'none'
-};
-
 const IndexPage = () => {
     const [screenWidth, setScreenWidth] = useState('70%');
     const [windowWidth, setWindowWidth] = useState(0);
@@ -49,9 +42,7 @@ const IndexPage = () => {
     }, []);
 
     return (
-        <PageLayout
-            location={location}
-        >
+        <PageLayout>
             <SEO
                 title={config.head.title}
                 description={config.head.description}
