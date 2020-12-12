@@ -1,7 +1,9 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+// custom typefaces
+import 'typeface-rubik';
 
-// You can delete this file if you're not using it
+// custom CSS styles
+import './src/style.css';
+import './src/App.css';
+
+// Highlighting for code blocks
+import 'prismjs/themes/prism.css';

@@ -1,42 +1,34 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import {Link} from 'gatsby';
+import React from 'react';
+import {config} from '../config'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = () => (
+    <>
+        <div style={{height: 10, background: 'rgb(0, 208, 126)'}}/>
+        <header style={{backgroundColor: '#2ecc7112'}}>
+            <div className='rcards'>
+                <div className='rcard'>
+                    <Link
+                        to={'/'}
+                        style={{color: 'transparent'}}
+                    >
+                        <h1>{config.siteName}</h1>
+                    </Link>
+                </div>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+                <div className='rcard'>
+                    <div className='flex-container'>
+                        <Link
+                            to={'/blog'}
+                            style={{color: 'transparent'}}
+                        >
+                            <button>{'Blog'}</button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </>
+);
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;

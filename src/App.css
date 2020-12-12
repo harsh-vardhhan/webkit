@@ -1,0 +1,94 @@
+.noDecoration, a:link, a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-display: swap;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-display: swap;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-display: swap;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-display: swap;
+}
+
+.flex-container {
+  display: flex;
+  direction: rtl;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.rcard {
+  padding: 1rem;
+}
+
+.rcards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .rcards { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .rcards { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Rubik';
+}
+
+ul.a {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+ul.a li:before {
+	content: "✅";
+	position: absolute;
+	left: 0;
+}
