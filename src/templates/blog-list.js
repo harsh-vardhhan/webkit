@@ -17,7 +17,6 @@ class BlogIndex extends React.Component {
 
     render() {
         const {data} = this.props;
-        const siteTitle = data.site.siteMetadata.title;
         const posts = data.allMarkdownRemark.edges;
         const {currentPage, numPages} = this.props.pageContext;
         const isFirst = currentPage === 1;

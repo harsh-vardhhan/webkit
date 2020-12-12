@@ -29,13 +29,8 @@ const IndexPage = () => {
     const [screenWidth, setScreenWidth] = useState('70%');
     const [windowWidth, setWindowWidth] = useState(0);
 
-    let location = {
-        pathname: ''
-    };
-
     useEffect(() => {
         setWindowWidth(window.innerWidth);
-        location = window.location;
         if (window.innerWidth < 480) {
             setScreenWidth('100%');
         }
