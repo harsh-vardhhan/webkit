@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
         title: 'Site Name',
         author: 'Site Author',
-        description: 'Description goes here',
+        description: 'Default Page Description Goes Here',
         siteUrl: 'https://www.website.com'
     },
     pathPrefix: '/gatsby-paginated-blog',
@@ -10,7 +10,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-google-analytics',
             options: {
-                trackingId: 'UA-TRACKINGID',
+                trackingId: 'UA-TRACKING-ID',
                 head: true,
                 anonymize: true
             }
