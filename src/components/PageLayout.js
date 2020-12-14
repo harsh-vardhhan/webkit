@@ -1,6 +1,6 @@
 import React from 'react';
 import {rhythm} from '../utils/typography';
-import Header from './Header';
+import Header from './HeaderComponent';
 
 class PageLayout extends React.Component {
     render() {

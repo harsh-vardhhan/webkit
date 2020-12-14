@@ -60,7 +60,7 @@ const IndexPage = () => {
                                             borderColor: '#00000'
                                         }}
                                         alt='SEO Analyst'
-                                        src={require('../images/image1.jpg')}
+                                        src={require('../images/image-1.jpg')}
                                     />
                                 </picture>
                             </div>
@@ -93,7 +93,7 @@ const IndexPage = () => {
                                         borderColor: '#00000'
                                     }}
                                     alt='SEO Analyst'
-                                    src={require('../images/image2.jpg')}
+                                    src={require('../images/image-2.jpg')}
                                 />
                             </picture>
                         </div>
@@ -113,7 +113,7 @@ const IndexPage = () => {
                                         borderColor: '#00000'
                                     }}
                                     alt='SEO Analyst'
-                                    src={require('../images/image3.jpg')}
+                                    src={require('../images/image-3.jpg')}
                                 />
                             </picture>
                         </div>
