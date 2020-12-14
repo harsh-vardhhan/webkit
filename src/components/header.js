@@ -5,7 +5,7 @@ import {config} from '../config'
 const Header = () => (
     <>
         <div style={{height: 10, background: 'rgb(0, 208, 126)'}}/>
-        <header style={{backgroundColor: '#2ecc7112'}}>
+        <div style={{backgroundColor: '#2ecc7112'}}>
             <div className='rcards'>
                 <div className='rcard'>
                     <Link
@@ -27,7 +27,7 @@ const Header = () => (
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
     </>
 );
 
