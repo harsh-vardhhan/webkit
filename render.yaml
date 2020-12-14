@@ -3,7 +3,7 @@ services:
   name: Webkit
   env: static
   buildCommand: yarn build
-  staticPublishPath: ./build
+  staticPublishPath: ./public
   pullRequestPreviewsEnabled: true     # optional
   headers:
   - path: /*
