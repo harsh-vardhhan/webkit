@@ -37,7 +37,8 @@
     "typography-theme-wordpress-2016": "^0.15.10",
     "gatsby-plugin-canonical-urls": "^2.3.13",
     "gatsby-plugin-sitemap": "^2.4.17",
-    "gatsby-plugin-robots-txt": "^1.5.3"
+    "gatsby-plugin-robots-txt": "^1.5.3",
+    "react-lite-youtube-embed": "^0.4.3"
   },
   "devDependencies": {
     "prettier": "2.1.2"
