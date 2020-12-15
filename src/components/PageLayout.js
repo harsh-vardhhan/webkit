@@ -11,7 +11,7 @@ class PageLayout extends React.Component {
                 <Header/>
                 <div
                     style={{
-                        maxWidth: rhythm(50)
+                        maxWidth: rhythm(100)
                     }}
                 >
                     {children}
